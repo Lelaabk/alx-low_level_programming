@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * reverse_array - reverse array
- * @a:array
+ * @ar:array
  * @n:integer
  * Return:void
  */
-void reverse_array(int *a, int n)
+void reverse_array(int *ar, int n)
 {
 int i, c;
 
 for (i = 0; (i < (n - 1) / 2); i++)
 	{
-	c = a[i];
-	a[i] = a[n - 1 - i];
-	a[n - 1 - i] = c;
+	c = ar[i];
+	ar[i] = ar[n - 1 - i];
+	ar[n - 1 - i] = c;
 	}
 }
