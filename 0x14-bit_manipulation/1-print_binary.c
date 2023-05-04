@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 	unsigned long int curr;
 	int x, c;
 
-	for (x = 63; x >= 0; i--)
+	for (x = 63; x >= 0; x--)
 	{
 		curr = n >> x;
 		if (curr & 1)
