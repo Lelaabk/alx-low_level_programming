@@ -5,20 +5,12 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int curr;
-	int x, c;
-
-	for (x = 63; x >= 0; x--)
+	if (n >> 0)
 	{
-		curr = n >> x;
-		if (curr & 1)
-		{
-			_putchar('1');
-			c++;
-		}
-		else if (c)
-			_putchar('0');
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-	if (!c)
-		_putchar(c);
+	else
+		_putchar('0');
 }
