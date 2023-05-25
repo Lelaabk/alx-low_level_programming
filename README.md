@@ -1,1 +1,3 @@
-0x00. C - Hello, World
+#Hello World!
+## Sprint 1
+
