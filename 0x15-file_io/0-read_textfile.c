@@ -10,7 +10,7 @@
  * and w for number of bytes read and printed.
  */
 
-ssize_t read_textfile(const char filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t f, r, w;
 	char *bff;
