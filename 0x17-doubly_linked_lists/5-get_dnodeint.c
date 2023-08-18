@@ -4,6 +4,7 @@
  * linked list
  * @head: pointer to head of list
  * @index: index of node to search for, starting from 0
+ * Return: nth node or NULL
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
