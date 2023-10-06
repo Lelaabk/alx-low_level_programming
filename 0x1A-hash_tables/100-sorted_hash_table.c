@@ -8,13 +8,13 @@ void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
 
 /**
- * shash_table_create - creates sorted hash table
+ **** shash_table_create - creates sorted hash table
  * @size: size of new sorted hash table
- *
  * Return: If error occurs - NULL
  * otherwise - pointer to new sorted hash table
+ *
+ * Description: function creates hash table data structure
  */
-
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *ht;
@@ -191,12 +191,13 @@ void shash_table_print_rev(const shash_table_t *ht)
 	printf("}\n");
 }
 
-/*
- * shash_table_delete - deletes sorted hash table
- * @ht: pointer to sorted hash table
+/**
+ * shash_table_delete - Deletes a self-balancing hash table and its nodes.
+ * @ht: A pointer to the hash table to be deleted.
  *
- * Description: function deallocate all memory resource associated
- * with hash table and its elements
+ * This function frees the memory associated with the given hash table and all
+ * of its associated nodes. It ensures proper cleanup when the hash table is
+ * no longer needed.
  */
 void shash_table_delete(shash_table_t *ht)
 {
