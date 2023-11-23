@@ -6,6 +6,13 @@ described in grid.
 
 
 def island_perimeter(grid):
+    """
+    Calculate primeter of island in given grid.
+    Args:
+        grid: representing island.
+    Returns:
+        int: perimeter of island.
+    """
     margin = 0
 
     for a in range(len(grid)):
