@@ -7,12 +7,6 @@ NAME = school
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@
-
-%.o: %.c m.h
-	$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
 	$(RM) *~ $(NAME)
 
@@ -22,6 +16,5 @@ oclean:
 fclean: clean oclean
 
 re: fclean all
-	-@$(RM) $(NAME)
 
 .PHONY: all clean oclean fclean re
